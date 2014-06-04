@@ -11,7 +11,7 @@
 }
 
 #hello {
-	padding: 10px 10px 10px 10px;
-	background-color:#FDEEF4;
-	border:black solid 1px;
+	margin: 10px 10px 10px 10px;
+	background-image:url('images/tlo2.jpg');
+	
 }
