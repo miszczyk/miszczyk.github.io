@@ -36,3 +36,9 @@ th {
 	background-color:black;
 	font-family:cursive;
 }
+
+#opis2 th {
+	border-bottom: solid black 1px;
+	background-color:#6600FF;
+	font-family:Gadget,sans-serif;
+}
