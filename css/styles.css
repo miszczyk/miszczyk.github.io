@@ -10,10 +10,8 @@
 	padding-top:0;
 }
 
-#hello {
-	background-color:#FDEEF4;
-	border:black solid 1px;
-	height:200%;
+#plan {
+	max-width: 200px;
 }
 
 #chosing {
