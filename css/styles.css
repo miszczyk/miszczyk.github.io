@@ -10,10 +10,13 @@
 	padding-top:0;
 }
 
-#plan {
-	max-width: 200px;
-}
+
 
 #chosing {
 	margin-top:30px;
+}
+
+#pauza {
+	height:100%;
+	margin-bottom:50px;
 }
