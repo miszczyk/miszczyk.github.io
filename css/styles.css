@@ -42,3 +42,7 @@ th {
 	background-color:#A0A0A0;
 	font-family:Gadget,sans-serif;
 }
+
+#nope {
+	border-bottom:none;
+}
