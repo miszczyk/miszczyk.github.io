@@ -71,7 +71,7 @@
         maxZoom: 18
         }).addTo(map);
 
-       var marker1 = L.marker([54.2578, 18.5094]).addTo(map).bindPopup("Tu mieszkam").openPopup();
+       var marker = L.marker([54.2578, 18.5094]).addTo(map).bindPopup("Tu mieszkam").openPopup();
           map.on('click', function(e) {return L.marker(e.latlng, {draggable: true}).addTo(map)});
 
         var marker2 = L.marker([54.2578, 20.5094]).addTo(map).bindPopup("Tu mieszkam").openPopup();
