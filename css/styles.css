@@ -48,10 +48,12 @@ th {
 
 #francja {
 	background-image:url('/images/francja.jpg');
+	background-size: contain;
 }
 
 #kurczak {
 	background-image:url('/images/kurczak.jpg');
+	background-size: contain;
 }
 
 
