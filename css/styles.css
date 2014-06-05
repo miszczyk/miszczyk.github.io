@@ -42,7 +42,8 @@ th {
 }
 
 #ameryka {
-	background-image:url('/images/ameryka.jpg') width="100%" height=auto;
+	background-image:url('/images/ameryka.jpg');
+	background-size: contain;
 }
 
 #francja {
