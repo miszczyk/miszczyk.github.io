@@ -1,72 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <tittle> Leaflet test </title>
+  <link rel="stylesheet" type="text/css" href="styles.css" />
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Mapa : Mapa-Leaflet" />
-	
-    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css" />
-	
-    <script src="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js"></script>
-    
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-    
-    <script src="javascripts/localforage.js"></script>
+  <link rel="stylesheet" href ="leaflet-0.7.3/leaflet.css" />
+  <script src="leaflet-0.7.3/leaflet.js"></script>
+  <script>
 
-    <title>Mapa</title>
-  </head>
 
-  <body>
+  </script>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-      <header class="inner">
-	<a id="forkme_banner" href="https://github.com/apastuszka/Mapa">View on GitHub</a>
+</head>
 
-        <h1 id="project_title">Mapa</h1>
-        <h2 id="project_tagline">Mapa-Leaflet</h2>
 
-        <section id="downloads">
-          <a class="zip_download_link" href="https://github.com/apastuszka/Mapa/zipball/master">Download this project as a .zip file</a>
-          <a class="tar_download_link" href="https://github.com/apastuszka/Mapa/tarball/master">Download this project as a tar.gz file</a>
-        </section>
-      </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-	  <a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Gdańsk i okolice
-	</h3>
-      </section>
-      <div id="map" class="inner">
-        <script>
-          var map = L.map('map').setView([54.329, 18.65], 11);
-          /*L.tileLayer('http://b.tile.cloudmade.com/469a53de3ef34047975246e608586dd5/997/256/{z}/{x}/{y}.png', {
-    attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://cloudmade.com">CloudMade</a>',
-    maxZoom: 19
-}).addTo(map);*/
-          L.tileLayer('http://b.tiles.mapbox.com/v3/miszczyk.iead479o/{z}/{x}/{y}.png', {
-    attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
-    maxZoom: 19
-}).addTo(map);
-          var marker = L.marker([54.2578, 18.5094]).addTo(map).bindPopup("Tu mieszkam").openPopup();
-          map.on('click', function(e) {return L.marker(e.latlng, {draggable: true}).addTo(map)});
-        </script>
-        
-      </div>
-      <p></p>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Mapa maintained by <a href="https://github.com/apastuszka">apastuszka</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
+<body>
+  <div id="map"></div>
   </body>
+
 </html>
