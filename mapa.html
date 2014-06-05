@@ -85,8 +85,16 @@
          	var pozycja = e.latlng.toString();
          	
          	var xx = e.latlng.lat;
+         	var yy = e.latlng.lng;
 
-         	var opis = prompt("Opisz punkt", xx);
+         	var opis = prompt("Opisz punkt", "np. Dworzec główny");
+
+         	localforage.setItem('x',xx, function(result) {
+         		console.log(result) });
+         	localforage.setItem('y',yy, function(result) {
+         		console.log(result) });
+         	localforage.setItem('opis',opis, function(result) {
+         		console.log(result) });
 
          	return L.marker(e.latlng, {draggable: true}).addTo(map)});
 
