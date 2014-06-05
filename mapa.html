@@ -64,14 +64,11 @@
   <div id="map" class="inner">
         <script>
           var map = L.map('map').setView([54.329, 18.65], 11);
-          /*L.tileLayer('http://b.tile.cloudmade.com/469a53de3ef34047975246e608586dd5/997/256/{z}/{x}/{y}.png', {
+          L.tileLayer('http://b.tile.cloudmade.com/469a53de3ef34047975246e608586dd5/997/256/{z}/{x}/{y}.png', {
     attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://cloudmade.com">CloudMade</a>',
     maxZoom: 19
-}).addTo(map);*/
-          L.tileLayer('http://b.tiles.mapbox.com/v3/apastuszka.id56dd87/{z}/{x}/{y}.png', {
-    attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
-    maxZoom: 19
 }).addTo(map);
+       
           var marker = L.marker([54.2578, 18.5094]).addTo(map).bindPopup("Tu mieszkam").openPopup();
           map.on('click', function(e) {return L.marker(e.latlng, {draggable: true}).addTo(map)});
         </script>
