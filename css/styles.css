@@ -41,6 +41,17 @@ th {
 	font-family:Gadget,sans-serif;
 }
 
+#kolorowy #ameryka {
+	background-image:url(images/ameryka.jpg);
+}
+
+#kolorowy #francja {
+	background-image:url(images/francja.jpg);
+}
+
+#kolorowy #kurczak {
+	background-image:url(images/kurczak.jpg);
+}
 
 
 #opis2 {
