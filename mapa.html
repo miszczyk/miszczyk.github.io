@@ -89,7 +89,6 @@ function onMapClick(e) {
     popup
         .setLatLng(e.latlng)
         .setContent("Kliknąłeś na pozycji:  " + e.latlng.toString())
-        console.log(e.latlng.toString());
         .openOn(map);
 }
 
