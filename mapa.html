@@ -72,10 +72,11 @@
         }).addTo(map);
 
        var marker = L.marker([54.377, 18.621]).addTo(map).bindPopup("Tu zagrałem pierwszy koncert").openPopup();
-          map.on('click', function(e) {return L.marker(e.latlng, {draggable: true}).addTo(map)});
+          
 
         var marker2 = L.marker([54.36, 18.624]).addTo(map).bindPopup("A tu ostatni").openPopup();
-          map.on('click', function(e) {return L.marker(e.latlng, {draggable: true}).addTo(map)}); 
+         
+         map.on('click', function(e) {return L.marker(e.latlng, {draggable: true}).addTo(map)});
 
           var popup = L.popup();
 
