@@ -83,6 +83,7 @@
          
          map.on('click', function(e) {
          	var pozycja = e.latlng.toString();
+         	prompt("Please enter your name","Harry Potter");
 
          	return L.marker(e.latlng, {draggable: true}).addTo(map)});
 
