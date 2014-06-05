@@ -84,12 +84,12 @@
          map.on('click', function(e) {
          	var pozycja = e.latlng.toString();
          	
-         	float lat=Float.parseFloat(parser.getValue(KEY_LATITUDE));
-            float lng=Float.parseFloat(parser.getValue(KEY_LONGITUDE));
+         	float x=Float.parseFloat(parser.getValue(KEY_LATITUDE));
+            float y=Float.parseFloat(parser.getValue(KEY_LONGITUDE));
 
          	
 
-         	var opis = prompt(pozycja,lat);
+         	var opis = prompt(pozycja,x);
 
          	return L.marker(e.latlng, {draggable: true}).addTo(map)});
 
