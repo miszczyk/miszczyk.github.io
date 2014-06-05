@@ -60,17 +60,29 @@
 
 	<!-- MAPA -->
 <div = "container">
-	<div id="map"></div>
+<h3 id="setting-up-the-map">Setting up the map</h3>
 
-		<script>
+<div id="map1" class="map" style="height: 180px"></div>
 
-			var map = L.map('map').setView([51.505, -0.09], 13);
-			L.tileLayer('http://{s}.tiles.mapbox.com/v3/MapID/{z}/{x}/{y}.png', {
-    attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
-    maxZoom: 18
-}).addTo(map);
+<p>Let&#8217;s create a map of the center of London with pretty Mapbox Streets tiles. First we&#8217;ll initialize the map and set its view to our chosen geographical coordinates and a zoom level:</p>
 
-		</script>
+<pre><code>var map = L.map('map').setView([51.505, -0.09], 13);
+</code></pre>
+
+<p>By default (as we didn&#8217;t pass any options when creating the map instance), all mouse and touch interactions on the map are enabled, and it has zoom and attribution controls.</p>
+
+<p>Note that <code>setView</code> call also returns the map object &#8212; most Leaflet methods act like this when they don&#8217;t return an explicit value, which allows convenient jQuery-like method chaining.</p>
+
+<p>Next we&#8217;ll add a tile layer to add to our map, in this case it&#8217;s a Mapbox Streets tile layer. Creating a tile layer usually involves setting the URL template for the tile images (get yours at <a href="http://mapbox.com">Mapbox</a>), the attribution text and the maximum zoom level of the layer:</p>
+
+<pre><code class="javascript">L.tileLayer('http://{s}.tiles.mapbox.com/v3/<a href="https://mapbox.com">MapID</a>/{z}/{x}/{y}.png', {
+	attribution: 'Map data &amp;copy; <span class="text-cut" data-cut="[&hellip;]">&lt;a href="http://openstreetmap.org"&gt;OpenStreetMap&lt;/a&gt; contributors, &lt;a href="http://creativecommons.org/licenses/by-sa/2.0/"&gt;CC-BY-SA&lt;/a&gt;, Imagery &copy; &lt;a href="http://mapbox.com"&gt;Mapbox&lt;/a&gt;</span>',
+	maxZoom: 18
+}).addTo(map);</code></pre>
+
+<p>Make sure all the code is called after the <code>div</code> and <code>leaflet.js</code> inclusion. That&#8217;s it! You have a working Leaflet map now.</p>
+
+<p>It&#8217;s worth noting that Leaflet is provider-agnostic, meaning that it doesn&#8217;t enforce a particular choice of providers for tiles, and it doesn&#8217;t even contain a single provider-specific line of code, so you&#8217;re free to use other providers if you need to (we&#8217;d recommend Mapbox though, it looks beautiful).</p>
 	
 </div>
 
