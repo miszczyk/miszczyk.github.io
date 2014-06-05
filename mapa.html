@@ -8,7 +8,7 @@
 	<link href ="css/styles.css" rel = "stylesheet"/>
 <!-- leaflet -->
 	 <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
-	  <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+	  
 </head>
 <body>
 	
@@ -61,20 +61,16 @@
 	<!-- MAPA -->
 <div = "container">
 
-  <div id="map" class="inner">
-  	
-     <script>
-// Replace 'examples.map-i87786ca' with your map id.
-var mapboxTiles = L.tileLayer('https://{s}.tiles.mapbox.com/v3/miszczyk.iead479o/{z}/{x}/{y}.png', {
-    attribution: '<a href="http://www.mapbox.com/about/maps/" target="_blank">Terms &amp; Feedback</a>'
-});
-
-var map = L.map('map')
-    .addLayer(mapboxTiles)
-    .setView([42.3610, -71.0587], 15);
-</script>
-        
-      </div>
+<div id="map"/>
+    <script type="text/javascript" src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+    <script type="text/javascript">
+    var map = L.map('map').setView([28.23211669921875, -26.050065042385917], 10);
+//    L.tileLayer('http://b.tilecloudmade.com/e7b61e61295a44a5b319ca0bd3150890/997/256/18/149531/108306.png', {
+        L.tileLayer('http://{s}.tile.cloudmade.com/e7b61e61295a44a5b319ca0bd3150890/997/256/{z}/{x}/{y}.png', {
+        attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery Â© <a href="http://cloudmade.com">CloudMade</a>',
+        maxZoom: 18
+        }).addTo(map);
+    </script>
         
       
 
