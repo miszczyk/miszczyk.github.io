@@ -42,15 +42,15 @@ th {
 }
 
 #kolorowy #ameryka {
-	background-image:url(images/ameryka.jpg);
+	background-image:url('images/ameryka.jpg');
 }
 
 #kolorowy #francja {
-	background-image:url(images/francja.jpg);
+	background-image:url('images/francja.jpg');
 }
 
 #kolorowy #kurczak {
-	background-image:url(images/kurczak.jpg);
+	background-image:url('images/kurczak.jpg');
 }
 
 
