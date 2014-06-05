@@ -35,6 +35,7 @@ th {
 
 #lol th {
 	border-bottom: solid black 1px;
+	border-right: solid black 1px; 
 	background-color:#A0A0A0;
 	font-family:Gadget,sans-serif;
 }
