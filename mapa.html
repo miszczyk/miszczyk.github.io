@@ -70,6 +70,12 @@
         attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery Â© <a href="http://cloudmade.com">CloudMade</a>',
         maxZoom: 18
         }).addTo(map);
+
+       var marker1 = L.marker([54.2578, 18.5094]).addTo(map).bindPopup("Tu mieszkam").openPopup();
+          map.on('click', function(e) {return L.marker(e.latlng, {draggable: true}).addTo(map)});
+
+        var marker2 = L.marker([54.2578, 20.5094]).addTo(map).bindPopup("Tu mieszkam").openPopup();
+          map.on('click', function(e) {return L.marker(e.latlng, {draggable: true}).addTo(map)}); 
     </script>
         
       
