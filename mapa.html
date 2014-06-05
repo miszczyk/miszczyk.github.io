@@ -76,6 +76,19 @@
 
         var marker2 = L.marker([54.36, 18.624]).addTo(map).bindPopup("A tu ostatni").openPopup();
           map.on('click', function(e) {return L.marker(e.latlng, {draggable: true}).addTo(map)}); 
+
+          var popup = L.popup();
+
+function onMapClick(e) {
+    popup
+        .setLatLng(e.latlng)
+        .setContent("You clicked the map at " + e.latlng.toString())
+        .openOn(map);
+}
+
+map.on('click', onMapClick);
+
+
     </script>
         
       
