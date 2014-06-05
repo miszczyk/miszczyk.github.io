@@ -81,17 +81,17 @@
 
         var marker2 = L.marker([54.36, 18.624]).addTo(map).bindPopup("A tu ostatni").openPopup();
 
-        localforage.getItem('x', function(x) {
+        localforage.getItem('x', function(xx) {
     	// Run this code once the value has been
     	// loaded from the offline store.
-    	localforage.getItem('y', function(y) {
+    	localforage.getItem('y', function(yy {
     	// Run this code once the value has been
     	// loaded from the offline store.
     	localforage.getItem('opis', function(opis) {
     	// Run this code once the value has been
     	// loaded from the offline store.
 
-    	L.marker([x,y]).addTo(map).bindPopup(""+opis).openPopup();
+    	L.marker([xx,yy]).addTo(map).bindPopup(""+opis).openPopup();
     	console.log(value);
 		});
     	console.log(value);
