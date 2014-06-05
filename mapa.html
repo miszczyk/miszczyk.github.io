@@ -84,11 +84,11 @@
          map.on('click', function(e) {
          	var pozycja = e.latlng.toString();
          	
-         	float x= 14.5;
+         	
 
          	
 
-         	var opis = prompt("fsdf", "sdfsdf");
+         	var opis = prompt("Opisz punkt",pozycja);
 
          	return L.marker(e.latlng, {draggable: true}).addTo(map)});
 
