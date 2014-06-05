@@ -84,9 +84,9 @@
          map.on('click', function(e) {
          	var pozycja = e.latlng.toString();
          	
-         	
+         	var xx = e.lat.toString();
 
-         	var opis = prompt("Opisz punkt","Pozycja");
+         	var opis = prompt("Opisz punkt", xx);
 
          	return L.marker(e.latlng, {draggable: true}).addTo(map)});
 
