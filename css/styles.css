@@ -31,11 +31,7 @@ th {
 	font-family:sans-serif;
 }
 
-#opis2 {
-	color:white;
-	background-color:black;
-	font-family:cursive;
-}
+
 
 #lol th {
 	border-bottom: solid black 1px;
@@ -45,4 +41,10 @@ th {
 
 #nope {
 	border-bottom:none;
+}
+
+#opis2 {
+	color:white;
+	background-color:black;
+	font-family:cursive;
 }
