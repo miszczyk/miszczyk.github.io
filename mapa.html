@@ -68,6 +68,7 @@
 <h3 class="text-center"> Miejsca gdzie mój zespół koncertował :] </h3>
 <div id="map"/>
     <script type="text/javascript" src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+    <script src="localforage.js"></script>
     <script type="text/javascript">
     var map = L.map('map').setView([54.381, 18.613], 13);
        L.tileLayer('http://b.tiles.mapbox.com/v3/miszczyk.iead479o/{z}/{x}/{y}.png', {
@@ -96,12 +97,6 @@ map.on('click', onMapClick);
 
     </script>
 
-    <script src="localforage.js"></script>
-      <script>
-     	// userChoice = prompt("Do you choose rock, paper or scissors");
-     	console.log(e.latlng.toString());
-      
-    </script>
         
       
 
