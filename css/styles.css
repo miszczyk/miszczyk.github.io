@@ -39,12 +39,14 @@ th {
 	font-family:Gadget,sans-serif;
 }
 
-#nope {
-	border-bottom:none;
-}
+
 
 #opis2 {
 	color:white;
 	background-color:black;
 	font-family:cursive;
+}
+
+#nope {
+	border:none;
 }
