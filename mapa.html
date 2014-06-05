@@ -80,6 +80,27 @@
           
 
         var marker2 = L.marker([54.36, 18.624]).addTo(map).bindPopup("A tu ostatni").openPopup();
+
+        localforage.getItem('x', function(value) {
+    	// Run this code once the value has been
+    	// loaded from the offline store.
+    	localforage.getItem('y', function(value) {
+    	// Run this code once the value has been
+    	// loaded from the offline store.
+    	localforage.getItem('opis', function(value) {
+    	// Run this code once the value has been
+    	// loaded from the offline store.
+
+    	L.marker([x,y]).addTo(map).bindPopup(""+opis).openPopup();
+    	console.log(value);
+		});
+    	console.log(value);
+		});
+    	console.log(value);
+		});
+
+
+
          
          map.on('click', function(e) {
          	var pozycja = e.latlng.toString();
