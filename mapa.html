@@ -83,18 +83,11 @@
          
          map.on('click', function(e) {
          	var pozycja = e.latlng.toString();
-         	var i = 8;
-         	var posx;
-         	var posy;
-         	while((pozycja[i] != ',') || (i < pozycja.length) {
-         		posx[i] = pozycja[i];
-
-         		i++;
-         	}
+         
 
          	
 
-         	var opis = prompt("Opisz punkt",posx);
+         	var opis = prompt("Opisz punkt",pozycja);
 
          	return L.marker(e.latlng, {draggable: true}).addTo(map)});
 
