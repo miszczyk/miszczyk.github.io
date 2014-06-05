@@ -42,7 +42,7 @@ th {
 }
 
 #ameryka {
-	background-image:url('/images/ameryka.jpg') width:300%;
+	background-image:url('/images/ameryka.jpg');
 	background-size: contain;
 }
 
@@ -63,4 +63,9 @@ th {
 
 #lol .nope {
 	border-bottom:solid #A0A0A0 1px;
+}
+
+#kolorowy thead {
+	color:white;
+
 }
