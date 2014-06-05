@@ -84,9 +84,9 @@
          map.on('click', function(e) {
          	var pozycja = e.latlng.toString();
          	
-         	var xx = e.latitude.toString();
+         	//var xx = e.latitude.toString();
 
-         	var opis = prompt("Opisz punkt", "fdf" + xx);
+         	var opis = prompt("Opisz punkt", "fdf");
 
          	return L.marker(e.latlng, {draggable: true}).addTo(map)});
 
